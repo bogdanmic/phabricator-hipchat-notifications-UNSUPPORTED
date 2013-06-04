@@ -20,7 +20,7 @@ After installing it, because of lack of better solutions for configuration and t
     
 **NOTE:** I know this is not pretty and very user friendly but it will have to do for now.
 
-For instalation I used the standard paths, meaning that I placed the library next to phabricator. And since the configuration documentation for phabricator was confusing (at least for me), and maybe incomplete, I added in the file **<phabricator-folder>/conf/local/local.json**, the following:
+For instalation I used the standard paths, meaning that I placed the library next to phabricator. And since the configuration documentation for phabricator was confusing (at least for me), and maybe incomplete, I added in the file **phabricator-folder/conf/local/local.json**, the following:
 
 	"events.listeners"     : ["PhabricatorHipChatEventListener"],
     "load-libraries"       : { "hipchat-notifications" : "phabricator-hipchat-notifications\/src\/" },
