@@ -23,8 +23,6 @@ After installing it, because of lack of better solutions for configuration and t
 For instalation I used the standard paths, meaning that I placed the library next to phabricator. And since the configuration documentation for phabricator was confusing (at least for me), and maybe incomplete, I added in the file **<phabricator-folder>/conf/local/local.json**, the following:
 
 	"events.listeners"     : ["PhabricatorHipChatEventListener"],
-    "load-libraries"       : {
-    "hipchat-notifications" : "phabricator-hipchat-notifications\/src\/"
-    },
+    "load-libraries"       : { "hipchat-notifications" : "phabricator-hipchat-notifications\/src\/" },
     
 at the top. I know i should have used the **./bin/config set** but somehow i did not manage to send it JSON data. Maybe next time :(
