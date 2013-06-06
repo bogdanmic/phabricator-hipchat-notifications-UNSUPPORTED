@@ -70,7 +70,7 @@ final class PhabricatorHipChatEventListener extends PhutilEventListener
 
             if (strlen($message) > 0) {
                 // send a $message to the $room room from $from
-                $hc->message_room($room, $from, $message, false, $messageColor);
+                $hc->message_room($room, $from, $message, true, $messageColor);
             }
 
             // if we sent once the message then we don't want to send it anymore
